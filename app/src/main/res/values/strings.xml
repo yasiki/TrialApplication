@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Trial Application</string>
+    <string name="linear_line1">LinearLayout1行目</string>
+    <string name="linear_line2">LinearLayout2行目</string>
+    <string name="move_linear_layout_activity">LinearLayoutActivityへ移動</string>
+    <string name="change_activity">Change Activity</string>
 </resources>

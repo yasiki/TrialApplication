@@ -1,8 +1,11 @@
 package com.example.trialapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,6 +13,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Log.d("trace", "MainActivity onCreate: start")
         setContentView(R.layout.activity_main)
+
+        val button: Button = findViewById(R.id.move_linear_layout_button)
+        button.setOnClickListener { onClickMove() }
+    }
+
+    private fun onClickMove() {
+        Log.d("trace", "MainActivity onClick: start")
+        val intent = Intent(this, LinearLayoutActivity::class.java)
+        startActivity(intent)
     }
 
     override fun onStart() {
